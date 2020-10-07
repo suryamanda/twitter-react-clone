@@ -12,10 +12,10 @@ function TweetBox() {
         e.preventDefault();
         db.collection('posts').add({
             displayName : 'Surya Manda',
-            userName : 'suryamss09',
+            userName : 'suryamanda',
             text : tweetMessage,
             image : tweetImage,
-            avatar : "https://media-exp1.licdn.com/dms/image/C5103AQEvHcXOTxOZNw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=oMrWuOYWxywieiScSTMQydASbXl0KJrs2QiyKdvUlZQ",
+            avatar : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTXewH0RzKjdCxvogjdCN5hPLko2WR7jErSg&usqp=CAU",
             verified : true
         });
     }
@@ -24,7 +24,7 @@ function TweetBox() {
         <div className = "tweetBox">
         <form>
         <div className = "tweetBox__input">
-        <Avatar src="https://media-exp1.licdn.com/dms/image/C5103AQEvHcXOTxOZNw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=oMrWuOYWxywieiScSTMQydASbXl0KJrs2QiyKdvUlZQ"/>
+        <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTXewH0RzKjdCxvogjdCN5hPLko2WR7jErSg&usqp=CAU"/>
        <input 
        onChange = {e => setTweetMessage(e.target.value)}
        value = {tweetMessage} placeholder = "what's happening?" type="text" />
